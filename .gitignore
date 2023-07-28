@@ -1,0 +1,10 @@
+
+# Ignore hidden files
+.*
+
+# Track gitignore and gitattributes
+!/.gitignore
+!/.gitattributes
+
+# Python files
+**/__pycache__/**
