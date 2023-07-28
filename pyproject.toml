@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "notecache"
+version = "0.0.1.dev1"
+authors = [
+  { name="Joshua Shew", email="joshua.t.shew@gmail.com" },
+]
+description = "A package for caching large intermediate variables between sessions in Jupyter Notebook."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Jython1415/notecache"
+"Bug Tracker" = "https://github.com/Jython1415/notecache/issues"
+
+[tool.hatch.build]
+ignore-vcs = true
+include = [
+  "/requirements.txt",
+  "/LICENSE",
+  "/README.md",
+  "/pyproject.toml",
+  "/src/**/*.py",
+  "/tests/**/*.py",
+]
+exclude = [
+  "**/tmp/**"
+]
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src/notecache"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""

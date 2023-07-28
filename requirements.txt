@@ -1,0 +1,26 @@
+astroid==2.15.6
+attrs==23.1.0
+dill==0.3.7
+exceptiongroup==1.1.2
+hypothesis==6.82.0
+iniconfig==2.0.0
+isort==5.12.0
+lazy-object-proxy==1.9.0
+mccabe==0.7.0
+notecache @ file:///Users/Joshua/Documents/_hobbies/_programming/notecache
+numpy==1.25.1
+packaging==23.1
+pandas==2.0.3
+platformdirs==3.9.1
+pluggy==1.2.0
+pylint==2.17.5
+pytest==7.4.0
+python-dateutil==2.8.2
+pytz==2023.3
+six==1.16.0
+sortedcontainers==2.4.0
+tomli==2.0.1
+tomlkit==0.12.1
+typing_extensions==4.7.1
+tzdata==2023.3
+wrapt==1.15.0
