@@ -77,3 +77,25 @@ frames that are generated after expensive sorting and processing steps
 - Contact the repository author if you used this package in a public repository
 or if you know of anywhere else it is used so that it can be featured in this
 list.
+
+## Developer Instructions
+
+### Installation
+
+1. Fork the repository
+1. Clone your fork with `git clone ...`
+1. Run the installation script: `bash scripts/install.sh`
+1. Confirm successful installation by running unit tests
+    1. Activate the virtual environment: `source .venv/bin/activate`
+    1. Run the tests: `pytest tests/unit`
+
+### Issues
+
+Submit issues to the GitHub repository with steps to reproduce any bugs. Feature
+requests and optimization ideas can also be submitted as issues.
+
+### Making Code Contributions
+
+1. Make changes on a branch in your fork
+1. Create tests to define behavior and get them passing
+1. Create a pull request with a description of the changes
