@@ -106,7 +106,10 @@ def _default_state_comparison(prev_state: State, state: State) -> bool:
     """
 
     if hasattr(prev_state, "equals") and callable(prev_state.equals):
-        return not prev_state.equals(state)
+        try:
+            return not prev_state.equals(state)
+        except BaseException:  # pylint: disable=broad-except
+            return prev_state != state
     return prev_state != state
 
 
