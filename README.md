@@ -1,5 +1,8 @@
 # notecache — Notebook Caching
 
+Created by Joshua Shew
+([joshua.t.shew@gmail.com]("mailto:joshua.t.shew@gmail.com")).
+
 ## Introduction
 
 *A package for state-dependent caching of large intermediate data frames in*
@@ -64,3 +67,13 @@ any given object. The 3 most important arguments passed into `load` are:
 
 `load` returns a named tuple, and the object can be accessed with
 `load([args]).object`.
+
+## Usage Examples
+
+- `notecache` is used in the
+[Zoll Foundation Grant Project](https://bit.ly/3PdMEQO) to cache large data
+frames that are generated after expensive sorting and processing steps
+(see the [source code](https://bit.ly/3QhRUn7)).
+- Contact the repository author if you used this package in a public repository
+or if you know of anywhere else it is used so that it can be featured in this
+list.
