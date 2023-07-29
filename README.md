@@ -17,6 +17,7 @@ df = expensive_computation([multiple_large_arguments])
 With `notecache`:
 
 ```python
+import notecache
 state = {"arg1": arg1, "arg2": another_arg}
 def generate(state) -> DataFrame:
     return expensive_computation(state["arg1"], state["arg2"])
@@ -28,6 +29,15 @@ generate the result. Following executions of this cell will load the result
 instead of calling `expensive_computation`, *even if the notebook has closed*
 *and reopened*. The result is recomputation *if and only if* a change to `state`
 has been detected.
+
+## Installation
+
+`notecache` can be found on [PyPI](https://pypi.org/project/notecache/). It can
+be installed with `pip`.
+
+```bash
+pip install notecache
+```
 
 ## Basic Usage
 
