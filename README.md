@@ -28,3 +28,29 @@ generate the result. Following executions of this cell will load the result
 instead of calling `expensive_computation`, *even if the notebook has closed*
 *and reopened*. The result is recomputation *if and only if* a change to `state`
 has been detected.
+
+## Basic Usage
+
+This package has one public function, `load`. It is used to both store and load
+any given object. The 3 most important arguments passed into `load` are:
+
+1. `state`
+
+    This argument should contain all the information that is required to compute
+    the object that is to be stored. A change in `state` between two calls to
+    `load` (with the same `unique_id`) will cause the object to be generated
+    instead of loaded from cache.
+
+1. `generate`
+
+    This is the function that is used to generate the target object. The return
+    value of `load` contains the return value of `generate(state)`.
+
+1. `unique_id`
+
+    The `sha512` hash value of `unique_id` is used to create a unique file name
+    to store the object. Overlapping `unique_id` in different calls to `load`
+    may cause cache objects to be overwritten.
+
+`load` returns a named tuple, and the object can be accessed with
+`load([args]).object`.
