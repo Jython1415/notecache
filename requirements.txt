@@ -19,7 +19,6 @@ markdown-it-py==3.0.0
 mccabe==0.7.0
 mdurl==0.1.2
 more-itertools==10.0.0
-notecache @ file:///Users/Joshua/Documents/_hobbies/_programming/notecache
 numpy==1.25.1
 packaging==23.1
 pandas==2.0.3
