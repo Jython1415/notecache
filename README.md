@@ -84,7 +84,7 @@ list.
 
 1. Fork the repository
 1. Clone your fork with `git clone ...`
-1. Run the installation script: `bash scripts/install.sh`
+1. Run the installation script: `./scripts/initialize.sh`
 1. Confirm successful installation by running unit tests
     1. Activate the virtual environment: `source .venv/bin/activate`
     1. Run the tests: `pytest tests/unit`
